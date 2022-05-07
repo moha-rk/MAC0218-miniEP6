@@ -1,0 +1,82 @@
+docker container run -p 80:8080 teste-caddyserver:1
+docker ps
+docker container ls
+docker container ls -a
+docker container rm 34aa6b86f20a
+docker container run -p 8080:80 teste-caddyserver:1
+docker container run -p 8080:80 teste-caddyserver:1
+docker container run --name my-caddy-server -p 8080:80 -d custom-caddy:2.5.0-alpine -v html:/usr/src/pages
+docker image build . -t custom-caddyserver:2.5.0-alpine
+docker container run --name my-caddy-server -p 8080:80 -d custom-caddy:2.5.0-alpine -v html:/usr/src/pages
+docker container run --name my-caddy-server -p 8080:80 -d custom-caddyserver:2.5.0-alpine -v html:/usr/src/pages
+docker container run --name my-caddy-server -p 8080:80 -d custom-caddyserver:2.5.0-alpine -v ./html:/usr/src/pages
+docker container remove my-caddy-server
+docker container rm my-caddy-server
+docker container run --name my-caddy-server -p 8080:80 -d custom-caddyserver:2.5.0-alpine -v ./html:/usr/src/pages
+docker container rm my-caddy-server
+systemctl stop docker
+dockerd --debug
+docker container run --name my-caddy-server -p 8080:80 -d custom-caddyserver:2.5.0-alpine -v ./html:/usr/src/pages
+docker start my-caddy-server
+docker container rm my-caddy-server
+docker container run --name my-caddy-server -p 8080:80 -d custom-caddyserver:2.5.0-alpine
+docker container ls
+docker container rm my-caddy-server
+docker container stop my-caddy-server
+docker container rm my-caddy-server
+docker container run --name my-caddy-server -p 8080:80 -d custom-caddyserver:2.5.0-alpine -v ${PWD}/html:/usr/src/pages
+docker container rm my-caddy-server
+docker image build . -t custom-caddyserver:2.5.0-alpine
+docker container run --name my-caddy-server -p 8080:80 -d custom-caddyserver:2.5.0-alpine -v ${PWD}/html:/usr/src/pages
+docker container rm my-caddy-server
+docker container run --name my-caddy-server -p 8080:80 -d -v html:/usr/src/pages custom-caddyserver:2.5.0-alpine
+docker container stop my-caddy-server
+docker container rm my-caddy-server
+docker container run --name my-caddy-server -p 8080:80 -v html:/usr/src/pages -d custom-caddyserver:2.5.0-alpine
+docker container stop my-caddy-server
+docker container rm my-caddy-server
+docker image build . -t custom-caddyserver:2.5.0-alpine
+docker container run --name my-caddy-server -p 8080:80 -v html:/usr/src/pages -d custom-caddyserver:2.5.0-alpine
+docker container stop my-caddy-server
+docker container rm my-caddy-server
+docker image build . -t custom-caddyserver:2.5.0-alpine
+docker container run --name my-caddy-server -p 8080:80 -v html:/usr/src/pages -d custom-caddyserver:2.5.0-alpine
+docker container stop my-caddy-server
+docker container start -i my-caddy-server
+docker container rm my-caddy-server
+docker image ls
+docker image rm custom-caddyserver:2.5.0-alpine 
+docker image build . -v -t custom-caddyserver:2.5.0-alpine
+docker image build --help
+docker image build . -t custom-caddyserver:2.5.0-alpine
+docker image rm custom-caddyserver:2.5.0-alpine 
+docker image build . -t custom-caddyserver:2.5.0-alpine
+docker container run --name my-caddy-server -p 8080:80 -d custom-caddyserver:2.5.0-alpine
+docker container ls
+docker container stop 17d5e2482dbe
+docker container rm my-caddy-server
+docker image ls
+docker image rm custom-caddyserver
+docker image ls
+docker image rm 5cd701a89dc6
+docker image build . -t custom-caddyserver:2.5.0-alpine
+docker container run --name my-caddy-server -p 8080:80 -d custom-caddyserver:2.5.0-alpine
+docker container stop my-caddy-server
+docker container rm my-caddy-server
+docker container run --name my-caddy-server -p 8080:80 -v html:/usr/src/pages -d custom-caddyserver:2.5.0-alpine
+docker container exec -it my-caddy-server echo a
+docker container exec -it my-caddy-server ls /usr/src/pages
+docker container exec -it my-caddy-server bash
+docker container stop
+docker container stop 957b9861db40
+docker container rm my-caddy-server
+docker container run --name my-caddy-server -p 8080:80 -d custom-caddyserver:2.5.0-alpine
+docker container exec -it my-caddy-server bash
+docker container stop my-caddy-server
+docker container rm my-caddy-server
+docker container run --name my-caddy-server -p 8080:80 -v ${PWD}/html:/usr/src/pages -d custom-caddyserver:2.5.0-alpine
+docker container exec -it my-caddy-server bash
+docker container stop my-caddy-server
+docker container rm my-caddy-server
+docker image build . -t custom-caddyserver:2.5.0-alpine
+docker container run --name my-caddy-server -p 8080:80 -v ${PWD}/html:/usr/src/pages -d custom-caddyserver:2.5.0-alpine
